@@ -215,6 +215,7 @@ You now have a fully functional **Terraform setup on an EC2 instance**, capable 
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/avinash-tale-3348b7217/)
 - 🐙 [GitHub](https://github.com/AvinashTale99)
+- 🐳 [Docker Hub](https://hub.docker.com/u/avinashtale99)
 - 📷 [Instagram](https://www.instagram.com/avinash_tale_patil)
 - 🌐 [Website](https://avinashtale99.github.io/AvinashRepo/)
 
