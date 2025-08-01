@@ -117,8 +117,8 @@ terraform -v
 
 ```bash
 sudo yum install git -y
-git clone https://github.com/atulkamble/ec2-terraform-project.git
-cd ec2-terraform-project
+https://github.com/AvinashTale99/terraform-ec2.git
+cd terraform-ec2
 
 terraform init
 terraform plan
@@ -144,21 +144,18 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "6.3.0"
+      version = "6.4.0"
     }
   }
 }
 
-provider "aws" {
-  region = "ap-south-1"
-}
-
-resource "aws_instance" "webserver" {
-  ami           = "ami-03f4878755434977f"  # Amazon Linux 2 AMI in ap-south-1 (Mumbai)
+# main.tf
+resource "aws_instance" "web" {
+  ami           = "ami-0a1235697f4afa8a4"
   instance_type = "t3.micro"
-
+  key_name      = "key"
   tags = {
-    Name = "one"
+    Name = "webserver"
   }
 }
 ```
